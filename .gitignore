@@ -669,3 +669,6 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/python,git,visualstudio,visualstudiocode,windows,linux,macos
+
+# Minhas configuracoes secretas
+myconfig.py
