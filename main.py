@@ -1,10 +1,10 @@
 import myconfig
 import formatadores
 from agentstate import AgentState 
+from triagemoutput import TriagemOutput
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-from pydantic import BaseModel, Field
-from typing import Literal, List, Dict
+from typing import Dict
 from langchain_core.messages import SystemMessage, HumanMessage
 
 from pathlib import Path
@@ -44,18 +44,6 @@ TRIAGEM_PROMPT = (
     '- **ABRIR_CHAMADO**: Pedidos de exceção, liberação, aprovação ou acesso especial, ou quando o usuário explicitamente pede para abrir um chamado (Ex: "Quero exceção para trabalhar 5 dias remoto.", "Solicito liberação para anexos externos.", "Por favor, abra um chamado para o RH.").'
     "Analise a mensagem e decida a ação mais apropriada."
 )
-
-class TriagemOutput(BaseModel):
-    decisao: Literal["AUTO_RESOLVER", "PEDIR_INFO", "ABRIR_CHAMADO"] = Field(
-        description="Decisão tomada com base na mensagem do usuário."
-    )
-    urgencia: Literal["BAIXA", "MEDIA", "ALTA"] = Field(
-        description="Nível de urgência da solicitação."
-    )
-    campos_faltantes: List[str] = Field(
-        default_factory=list,
-        description="Lista de campos ou informações que estão faltando na mensagem do usuário."
-    )
 
 llm_triagem = ChatGoogleGenerativeAI(temperature=0, 
                              model="gemini-2.5-flash",
