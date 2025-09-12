@@ -5,3 +5,5 @@ langchain_community
 faiss-cpu 
 langchain-text-splitters 
 pymupdf
+langgraph
+IPython
