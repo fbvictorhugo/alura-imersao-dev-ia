@@ -1,6 +1,11 @@
 # Imersão Dev Agentes de IA Google - Alura
 
-> Durante a Imersão Dev Agentes de IA da Alura com o Google Gemini, você não vai apenas rodar prompts, vai criar um sistema de agentes inteligente que decide o que fazer, quando consultar informações e como responder com precisão.
+Desenvolva Agentes de IA que pensam por você, com Google Gemini, RAG e LangGraph
+A Alura e o Google Gemini se uniram para a primeira edição da Imersão Dev Agentes de IA. São 3 aulas gratuitas, online e práticas para você dominar a criação de sistemas inteligentes que vão muito além dos prompts.
+
+Durante a Imersão Dev Agentes de IA da Alura com o Google Gemini, você não vai apenas rodar prompts, vai criar um sistema de agentes inteligente que decide o que fazer, quando consultar informações e como responder com precisão.
+
+[Alura | Imersão Dev Agentes de IA Google](https://www.alura.com.br/imersao-agentes-ia-google)
 
 ### Aula 01 - Classificação de intenções com IA
 
